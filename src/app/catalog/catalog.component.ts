@@ -195,10 +195,10 @@ getDiscountedClasses(product: IProduct) {
   if (product.discount > 0) {
     //this could also return multiple such as 
     //return 'strikethrough bold'
-    
-    return 'strikethrough';
+
+    return ['strikethrough'];
   } else {
-    return '';
+    return [];
   }
   
 }
