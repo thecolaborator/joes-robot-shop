@@ -7,6 +7,11 @@ a {
   font-weight: bold;
 }
 
+.bold {
+  font-weight: bold;
+}
+
+
 .container {
   display: flex;
   flex-direction: column;
