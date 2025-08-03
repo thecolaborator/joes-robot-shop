@@ -192,7 +192,15 @@ export class CatalogComponent {
   }
 
 getDiscountedClasses(product: IProduct) {
-  return {strikethrough: product.discount > 0};
+  if (product.discount > 0) {
+    //this could also return multiple such as 
+    //return 'strikethrough bold'
+    
+    return 'strikethrough';
+  } else {
+    return '';
+  }
+  
 }
 
 
