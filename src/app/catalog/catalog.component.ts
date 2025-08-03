@@ -5,8 +5,8 @@ import { I18nPluralPipe } from '@angular/common';
 @Component({
   selector: 'bot-catalog',
   templateUrl: './catalog.component.html',
-  // styleUrls: ['./catalog.component.css']
-  styles: ['a { font-weight: bold;}'],
+  styleUrls: ['./catalog.component.css']
+  
 })
 export class CatalogComponent {
   products: any;
