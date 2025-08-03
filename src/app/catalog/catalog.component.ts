@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IProduct } from './product.model';
+import { I18nPluralPipe } from '@angular/common';
 
 @Component({
   selector: 'bot-catalog',
@@ -19,6 +20,9 @@ export class CatalogComponent {
       price: 945.0,
       discount: 0.2
     };
+  }
+  getImageUrl(product: IProduct) {
+    return 'assets/images/robot-parts/' + product.imageName;
   }
 
 }
