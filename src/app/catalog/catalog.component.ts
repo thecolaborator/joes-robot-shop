@@ -203,11 +203,14 @@ getDiscountedClasses(product: IProduct) {
   
 }
 
-
-  getImageUrl(product: IProduct) {
-    if (!product) return '';
-    return 'assets/images/robot-parts/' + product.imageName;
+  addToCart(product: IProduct) {
+   // this.cart.push(product);
+    console.log(`product ${product.name} added to cart`);
   }
+  
+
+
+  
 
   getFilteredProducts() {
 
