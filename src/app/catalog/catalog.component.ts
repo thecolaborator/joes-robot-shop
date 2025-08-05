@@ -12,6 +12,7 @@ export class CatalogComponent {
   products: any;
 
   filter: string = '';
+  cart: IProduct[] = [];
 
   constructor() {
     this.products =  [
@@ -204,7 +205,7 @@ getDiscountedClasses(product: IProduct) {
 }
 
   addToCart(product: IProduct) {
-   // this.cart.push(product);
+    this.cart.push(product);
     console.log(`product ${product.name} added to cart`);
   }
   
